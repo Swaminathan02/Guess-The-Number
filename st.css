@@ -1,0 +1,113 @@
+body {
+  background: linear-gradient(to top, rgb(19, 246, 246), rgb(22, 250, 22));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+body::selection {
+  background: #ffcc00;
+  color: #000;
+}
+header {
+  position: relative;
+  font-family: 'Merienda', cursive, sans-serif;
+  border-bottom: 5px solid #e70909;
+}
+.ques {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  border: 3px solid rgb(10, 31, 3);
+  border-radius: 10px;
+  display: inline;
+  padding: 2px 10px;
+  position: absolute;
+  bottom: -90px;
+  left: 50%;
+  transform: translate(auto, auto);
+}
+.guess {
+  text-align: center;
+  position: relative;
+  font-size: 2rem;
+  text-shadow: 3px 3px 4px gold, 0px 2px 4px gray;
+}
+.top {
+  display: flex;
+  align-items: flex-start;
+  background-color: rgb(4, 92, 92);
+}
+.top .aga {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(232, 240, 123, 0.92);
+}
+.top .aga:hover {
+  background-color: rgb(10, 31, 3);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.top .bet {
+  border: 2px solid rgb(10, 31, 3);
+  font-size: 16px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  margin: 0;
+  border-radius: 10px;
+  background-color: rgba(232, 240, 123, 0.92);
+}
+.aga {
+  font-size: 17px;
+  color: rgb(0, 0, 0);
+}
+.score {
+  font-size: 20px;
+  color: rgb(6, 3, 0);
+}
+.inp {
+  font-size: 20px;
+  width: 100px;
+  height: 20px;
+  color: rgb(0, 0, 0);
+  border: 2px solid #000000;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 50px;
+  left: 50%;
+  transform: translate(auto, auto);
+  text-align: center;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
+}
+.inp:hover {
+  background-color: rgb(10, 31, 3);
+  color: rgb(255, 255, 255);
+}
+.msg {
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  padding: 5px 2px;
+  margin-left: 40%;
+}
+.check {
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(10, 31, 3);
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 20px;
+  position: fixed;
+  left: 0;
+  top: 370px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.check:hover {
+  background-color: rgb(245, 27, 27);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
